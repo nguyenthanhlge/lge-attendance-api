@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "lge-diem-danh",
+  "private_key_id": "6c6ddea4927fa8584b90766a12b35686a97bb184",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCmFZUc1djDoifm\n3/xXkyv+cugFfX+4mzcptoPFkacQNuS7/YWpDZpiKdKhNCzvNytKSB3isr27AtPO\n3OXM32GVeauSDN00G21UC3SopMYBSYsrYAguEMM5HJNWjQSrgloJi6GMwgrnQ6dl\nLP27HaB5o+AMQc1k/CL0euHZ70iYrMvEy8yk+8YUDEKVuWzmZSgZxV3dNcOmieRs\nrN8bMFSBeSPXZNT7bS00nYs56KjphTMFLotOIkyg/c+gid49nBH36Z6taAinmFxD\n3Mf2RxrVICpNYjbx19L2bnZDdRM9dI7Ye2uq9hrTTLC81gUlDgaPjyXV8WTBsmym\n2TqfhbpnAgMBAAECggEAE+2ABEM2bJbO0dlrRji+7Rttcocx5X0eO8+N9Q06bewg\nOtw7BuM+dGvPPY9smtFUTOflShenQ0KeFnKT0ia1Z0F/kBkiC4gE8LIlL70BkxL3\nc19k694QBpDCrv5hopCT7BRIcIKx2zjXY4Dn+uUdpaq/jcjxc537Nblu0v7uh372\nlTAJk3RbWAGvKsh/9fNlHAkshw8y3PhbCxIu6HZqODPfexs7tYJqzAiglz/DHDcA\neDCDdTFKe96aBhETZUsFmcz9l+wUf3eMufOK8Q+ZXKCGaf8NquODT+nKGsUAeh1L\nd695zW0I3phxGRZLLZ0oA+J+oqUu+CU5QaOhPCbcyQKBgQDgbe9t0Pc08z2f4mIL\nSAmlex1kTunci1oWQXZtIopCmt7LOpr7bulMSjrp1qSMvp48tD2Pn1NDmv/D0VGo\nbUn1BqicZ5ZzWgVnhm+KrEY1AEsgzMYqOU92wlGOaB96cVxShtvDh0kqO0xPyT3Y\nQHz1tf0v4W1UYiDFqCjfJ4jS7wKBgQC9coubpGAFlWMuN9YxeHveUIOG40qejQKF\nLorQOx3RvxPafkLAJdCV6MriogmtcnjFrAxj2on2iv63jOaccvykYQOQWQEmPQzz\njTg1w/BQMvQoqENhJ8TTT2hJjcij0EC/jPU2hiDs5PwsOhz15LPIM3ScgSD+cNmB\nZdQO+G6wCQKBgEZaL/P8zYGLvoWgMZvXuS5mqZAILMc158eSPc14Rl8arTyH4o1u\n9zMzEcS7xFlaZ8AfwCyFhVRsAkEgHLjviX+F1tUwo7kFPyx0uAKAfoGe1e4yQux5\niq9vuqEpgrSfVJGKNNnWTtkuPX3FV92yWXms0vFveRY6rItJa4aInhuBAoGAfs8Z\nnAkfLR2d0eYWPe8EGv+RysyBujdxJGzPBitL/oYEaBBz5eJqCK5Wf/UuvScOqGJN\nuNkj2B+Z+IscIkTlz7IQjKLHHi1nae9xXKvXRBeXT0+yKmpQWZGhoPqC/wP7Ezzr\nNp/5khiEo6YSlJWNscifmdLlnusy7GaY15x7muECgYBsXrjOKS53d7pD0mqOz8hI\nRwhnJruJ+zi1ci0k+N7C9jZ/LHqdlSQ50G26oNdvDPZxRlyvHrZVq7te3E7KLx6f\nLUgeynS2NiMdxGEg545dMIVHB+7mEfZXM0PQ8cc+gviIl3asRPc9vrSeL8FABU/o\nBpLgK0Mv+kTe1Wvk7/n3Ow==\n-----END PRIVATE KEY-----\n",
+  "client_email": "lge-attendance-service@lge-diem-danh.iam.gserviceaccount.com",
+  "client_id": "110883088467386786421",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lge-attendance-service%40lge-diem-danh.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
