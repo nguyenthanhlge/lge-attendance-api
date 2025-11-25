@@ -6,13 +6,16 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// File JSON key tải về từ Google Cloud
+// Đọc GOOGLE_CREDENTIALS từ biến môi trường Render
+const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+
+// Tạo Google Auth từ biến môi trường
 const auth = new google.auth.GoogleAuth({
-  keyFile: "lge-attendance-service.json",
+  credentials,
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
 
-// ID Spreadsheet điểm danh
+// ID Google Sheet
 const spreadsheetId = "1HRPzyWjgxLh_JLyM0EHs7scenOwMhzGOFlZnYf_CnpM";
 
 // Hàm lấy sheets client
@@ -37,7 +40,6 @@ app.get("/attendance/day", async (req, res) => {
   try {
     const sheets = await getSheets();
 
-    // 1. Tìm cột ngày trong H3:S3
     const headerResp = await sheets.spreadsheets.values.get({
       spreadsheetId,
       range: `${className}!H3:S3`,
@@ -54,13 +56,11 @@ app.get("/attendance/day", async (req, res) => {
 
     const targetColLetter = String.fromCharCode("H".charCodeAt(0) + colIndex);
 
-    // 2. Lấy danh sách học sinh
     const namesResp = await sheets.spreadsheets.values.get({
       spreadsheetId,
       range: `${className}!B5:B50`,
     });
 
-    // 3. Lấy cột điểm danh
     const attendResp = await sheets.spreadsheets.values.get({
       spreadsheetId,
       range: `${className}!${targetColLetter}5:${targetColLetter}50`,
@@ -103,7 +103,6 @@ app.put("/attendance/day", async (req, res) => {
   try {
     const sheets = await getSheets();
 
-    // Tìm cột
     const headerResp = await sheets.spreadsheets.values.get({
       spreadsheetId,
       range: `${className}!H3:S3`,
@@ -120,7 +119,6 @@ app.put("/attendance/day", async (req, res) => {
 
     const targetColLetter = String.fromCharCode("H".charCodeAt(0) + colIndex);
 
-    // Tải danh sách tên
     const namesResp = await sheets.spreadsheets.values.get({
       spreadsheetId,
       range: `${className}!B5:B50`,
@@ -163,8 +161,7 @@ app.put("/attendance/day", async (req, res) => {
 
 /**
  * ===============================================
- * 3) TÍNH TỔNG HỢP DOANH THU & ĐIỂM DANH
- * GET /attendance/summary?className=6A1
+ * 3) TỔNG HỢP
  * ===============================================
  */
 app.get("/attendance/summary", async (req, res) => {
